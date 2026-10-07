@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     payment_card_number: str = Field(alias='PAYMENT_CARD_NUMBER')
     payment_card_holder: str = Field(default='', alias='PAYMENT_CARD_HOLDER')
     database_url: str = Field(alias='DATABASE_URL')
+    api_port: int = Field(default=8000, alias='API_PORT')
     log_level: str = Field(default='INFO', alias='LOG_LEVEL')
     timezone: str = Field(default='Asia/Tehran', alias='TIMEZONE')
     model_config = SettingsConfigDict(env_file='.env', extra='ignore', populate_by_name=True)
