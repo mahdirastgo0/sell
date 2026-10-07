@@ -1,0 +1,11 @@
+aiogram==3.22.0
+fastapi==0.117.1
+uvicorn[standard]==0.37.0
+SQLAlchemy==2.0.43
+asyncpg==0.30.0
+pydantic-settings==2.10.1
+httpx==0.28.1
+qrcode[pil]==8.2
+python-multipart==0.0.20
+alembic==1.16.5
+cryptography==46.0.1
